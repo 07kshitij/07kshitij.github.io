@@ -1,18 +1,14 @@
 import * as React from "react";
-import ReactDOM from "react-dom";
+import { Stack, IStackItemStyles } from "@fluentui/react/lib/Stack";
+import { Text } from "@fluentui/react/lib/Text";
 
-export const Home : React.FC = () => {
-    return (
-      <div>
-          <h1>
-            Kshitij Agrawal
-          </h1>
-          <h3>
-            Work under progress. Please check out later
-          </h3>
-      </div>
-    )
+export const Home: React.FC = () => {
+  console.log("Hello");
+  return (
+    <Stack horizontalAlign="center">
+      <Text variant="xLarge">
+        Work under progress. Please check out later
+      </Text>
+    </Stack>
+  )
 }
-
-const wrapper = document.getElementById("container");
-wrapper ? ReactDOM.render(<Home />, wrapper) : false;
