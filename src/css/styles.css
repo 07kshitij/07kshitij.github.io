@@ -1,0 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.navPane :hover {
+    background-color: #000;
+}

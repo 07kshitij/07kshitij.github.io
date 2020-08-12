@@ -2,46 +2,27 @@ import * as React from "react";
 import { Stack, IStackStyles } from "@fluentui/react/lib/Stack";
 import { Text, ITextSlots, ITextStyles } from "@fluentui/react/lib/Text";
 import { Depths } from '@uifabric/fluent-theme/lib/fluent/FluentDepths';
+import { About } from "./about";
+import { Blog } from "./blog";
+import { Contact } from "./contact";
+import { Resume } from "./resume";
 
 export const Home: React.FC = () => {
   return (
     <Stack horizontalAlign="space-between" styles={homeStyles} gap="2vw">
-      <Stack styles={detailCardStyles} horizontalAlign="center" id="about">
-        <Text 
-          variant="xxLarge" 
-          styles={headerStyle}>
-        {" About "}
-        </Text>
-      </Stack>
-      <Stack styles={detailCardStyles} horizontalAlign="center" id="blog">
-        <Text 
-          variant="xxLarge" 
-          styles={headerStyle}>
-        {" Blog "}
-        </Text>
-      </Stack>
-      <Stack styles={detailCardStyles} horizontalAlign="center" id="resume">
-        <Text 
-          variant="xxLarge" 
-          styles={headerStyle}>
-        {" Resume "}
-        </Text>
-      </Stack>
-      <Stack styles={detailCardStyles} horizontalAlign="center" id="contact">
-        <Text 
-          variant="xxLarge" 
-          styles={headerStyle}>
-        {" Contact "}
-        </Text>
-      </Stack>
+      <About/>
+      <Blog/>
+      <Contact/>
+      <Resume/>
     </Stack>
   )
 }
 
 const homeStyles : Partial<IStackStyles> = {
   root: {
+    width: "100%",
     height: "100%",
-    padding: 20
+    backgroundColor: "white"
   }
 }
 

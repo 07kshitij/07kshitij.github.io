@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Stack, IStackItemStyles, IStackStyles } from "@fluentui/react/lib/Stack";
+import { Stack, IStackStyles } from "@fluentui/react/lib/Stack";
 import { Home } from "./components/home";
 import { Header } from "./components/header";
 import { Footer } from "./components/footer";
@@ -10,7 +10,6 @@ export const App: React.FC = () => {
     <Stack
       verticalAlign="space-between"
       horizontalAlign="center" 
-      gap="0"
       styles={appStyles}>
       <NavPane/>
       <Header/>
@@ -23,6 +22,6 @@ export const App: React.FC = () => {
 const appStyles: Partial<IStackStyles> = {
   root: {
     backgroundColor: "#F3F2F1",
-    width: "100%"
+    width: "100%",
   }
 }

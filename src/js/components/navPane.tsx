@@ -1,29 +1,32 @@
 import * as React from "react";
 import { Text, ITextStyles } from "@fluentui/react/lib/Text";
-import { Pivot, PivotItem, IPivotStyles, PivotLinkSize } from "@fluentui/react/lib/Pivot";
-// import { Label } from "@fluentui/react/lib/Label";
-// import { Link } from "@fluentui/react/lib/Link";
+import { Pivot, PivotItem, IPivotStyles, PivotLinkSize, PivotLinkFormat } from "@fluentui/react/lib/Pivot";
 import { Stack, IStackStyles } from "@fluentui/react/lib/Stack";
+import { Link, ILinkStyles } from "@fluentui/react/lib/Link";
+import "../../css/styles.css";
 
 export const NavPane: React.FC = () => {
   return (
     <Stack horizontal horizontalAlign="space-between" styles={navHeaderStyle}>
       <Stack>
-        <Text variant="xLarge" styles={nameStyles}>@kshitij_07</Text>
+        <Link styles={nameStyles} href="https://github.com/07kshitij/07kshitij.github.io">
+          <Text variant="xLarge">@07kshitij</Text>
+        </Link>
       </Stack>
       <Stack>
-        <Pivot linkSize={PivotLinkSize.large}>
-          <PivotItem headerText="About">
-            {/* <Label> About </Label> */}
+        <Pivot 
+          className="navPane"
+          linkSize={PivotLinkSize.large} 
+          styles={navPaneStyle} >
+          <PivotItem headerText="Home" ariaLabel="Home">
           </PivotItem>
-          <PivotItem headerText="Blog">
-            {/* <Label> Blog </Label> */}
+          <PivotItem headerText="About" ariaLabel="About">
           </PivotItem>
-          <PivotItem headerText="Resume">
-            {/* <Label> Resume </Label> */}
+          <PivotItem headerText="Blog" ariaLabel="Blog">
           </PivotItem>
-          <PivotItem headerText="Contact">
-            {/* <Label> Contact </Label> */}
+          <PivotItem headerText="Resume" ariaLabel="Resume">
+          </PivotItem>
+          <PivotItem headerText="Contact" ariaLabel="Contact">
           </PivotItem>
         </Pivot>
       </Stack>
@@ -34,7 +37,7 @@ export const NavPane: React.FC = () => {
 const navHeaderStyle: Partial<IStackStyles> = {
   root: {
     position: "sticky",
-    top: "0",
+    top: 0,
     backgroundColor: "black",
     width: "100%",
     paddingLeft: 30,
@@ -46,13 +49,12 @@ const navHeaderStyle: Partial<IStackStyles> = {
 
 const navPaneStyle: Partial<IPivotStyles> = {
   text: {
-    color: "white"
+    color: "white",
   }
 }
 
-const nameStyles: Partial<ITextStyles> = {
+const nameStyles: Partial<ILinkStyles> = {
   root: {
-    color: "white",
     paddingTop: 15,
     paddingLeft: 30,
     paddingRight: 30
