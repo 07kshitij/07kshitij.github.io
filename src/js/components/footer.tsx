@@ -11,11 +11,12 @@ initializeIcons();
 export const Footer: React.FC = () => {
   return (
     <Stack
-      horizontal
       horizontalAlign="center"
       verticalAlign="center"
       styles={footerStyle}>
-      <Text variant="xLarge"> Built with <Icon iconName="HeartFill" className={iconClass} /> by @kshitij_07 </Text>
+      <Text variant="xLarge">
+        Built with <Icon iconName="HeartFill" className={iconClass} /> by @kshitij_07
+      </Text>
     </Stack>
   )
 }
@@ -26,7 +27,7 @@ const footerStyle: Partial<IStackStyles> = {
     color: "white",
     backgroundColor: "black",
     width: "100%",
-    padding: "10px",
+    height: "20vh",
     boxShadow: Depths.depth4
   }
 }
