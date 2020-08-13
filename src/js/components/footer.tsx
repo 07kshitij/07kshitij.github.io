@@ -5,6 +5,7 @@ import { Icon } from "@fluentui/react/lib/Icon"
 import { Depths } from '@uifabric/fluent-theme/lib/fluent/FluentDepths';
 import { initializeIcons } from "@uifabric/icons";
 import { mergeStyles } from 'office-ui-fabric-react/lib/Styling';
+import { ScrollToTop } from "./scrollToTop";
 
 initializeIcons();
 
@@ -17,6 +18,7 @@ export const Footer: React.FC = () => {
       <Text variant="xLarge">
         Built with <Icon iconName="HeartFill" className={iconClass} /> by @kshitij_07
       </Text>
+      <ScrollToTop/>
     </Stack>
   )
 }

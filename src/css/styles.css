@@ -5,3 +5,15 @@ html {
 .navPane :hover {
     background-color: #000;
 }
+
+.scroll-to-top {
+    right: 3vw;
+    bottom: 3vw;
+    position: fixed;
+    background-color: blue;
+    color: white;
+}
+
+.scroll-to-top :hover {
+    color: blue;
+}
