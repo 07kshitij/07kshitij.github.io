@@ -2,10 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.navPane :hover {
-    background-color: #000;
-}
-
 .scroll-to-top {
     right: 3vw;
     bottom: 3vw;

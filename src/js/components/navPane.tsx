@@ -1,11 +1,25 @@
 import * as React from "react";
-import { Text, ITextStyles } from "@fluentui/react/lib/Text";
-import { Pivot, PivotItem, IPivotStyles, PivotLinkSize, PivotLinkFormat } from "@fluentui/react/lib/Pivot";
+import { Text } from "@fluentui/react/lib/Text";
 import { Stack, IStackStyles } from "@fluentui/react/lib/Stack";
 import { Link, ILinkStyles } from "@fluentui/react/lib/Link";
-import "../../css/styles.css";
+import { Button, IButtonStyles } from "@fluentui/react/lib/Button"
 
-export const NavPane: React.FC = () => {
+export interface INavPaneProps {
+  refProps: Array<React.RefObject<unknown>>
+}
+
+const scrollToView = (ref: any) => { ref.current.scrollIntoView() };
+
+export const NavPane: React.FC<INavPaneProps> = (props) => {
+
+  const [homeRef, aboutRef, blogRef, resumeRef, contactRef] = props.refProps;
+
+  const homeScroll = () => { scrollToView(homeRef); }
+  const aboutScroll = () => { scrollToView(aboutRef); }
+  const blogScroll = () => { scrollToView(blogRef); }
+  const resumeScroll = () => { scrollToView(resumeRef); }
+  const contactScroll = () => { scrollToView(contactRef); }
+
   return (
     <Stack horizontal horizontalAlign="space-between" styles={navHeaderStyle}>
       <Stack>
@@ -13,26 +27,17 @@ export const NavPane: React.FC = () => {
           <Text variant="xLarge">@07kshitij</Text>
         </Link>
       </Stack>
-      <Stack>
-        <Pivot 
-          className="navPane"
-          linkSize={PivotLinkSize.large} 
-          styles={navPaneStyle} >
-          <PivotItem headerText="Home" ariaLabel="Home">
-          </PivotItem>
-          <PivotItem headerText="About" ariaLabel="About">
-          </PivotItem>
-          <PivotItem headerText="Blog" ariaLabel="Blog">
-          </PivotItem>
-          <PivotItem headerText="Resume" ariaLabel="Resume">
-          </PivotItem>
-          <PivotItem headerText="Contact" ariaLabel="Contact">
-          </PivotItem>
-        </Pivot>
+      <Stack horizontal gap="1vw">
+        <Button onClick={homeScroll} styles={buttonStyles}>Home</Button>
+        <Button onClick={aboutScroll} styles={buttonStyles}>About</Button>
+        <Button onClick={blogScroll} styles={buttonStyles}>Blog</Button>
+        <Button onClick={resumeScroll} styles={buttonStyles}>Resume</Button>
+        <Button onClick={contactScroll} styles={buttonStyles}>Contact</Button>
       </Stack>
     </Stack>
   )
 }
+
 
 const navHeaderStyle: Partial<IStackStyles> = {
   root: {
@@ -42,14 +47,19 @@ const navHeaderStyle: Partial<IStackStyles> = {
     width: "100%",
     paddingLeft: 30,
     paddingRight: 30,
-    paddingBottom: 30,
+    paddingBottom: 15,
     paddingTop: 15
   }
 }
 
-const navPaneStyle: Partial<IPivotStyles> = {
-  text: {
-    color: "white",
+const buttonStyles: IButtonStyles = {
+  root: {
+    backgroundColor: 'black',
+    color: 'white',
+    border: 'none',
+    fontSize: '20px',
+    width: '5vw',
+    height: '5vh'
   }
 }
 

@@ -22,7 +22,7 @@ const headerStyle: Partial<IStackStyles> = {
     color: "white",
     backgroundColor: "black",
     width: "100%",
-    height: "40vh",
+    height: "30vh",
     boxShadow: Depths.depth16,
   }
 }

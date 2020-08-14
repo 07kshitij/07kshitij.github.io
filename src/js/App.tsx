@@ -6,16 +6,27 @@ import { Footer } from "./components/footer";
 import { NavPane } from "./components/navPane";
 
 export const App: React.FC = () => {
+
+  const homeRef: React.RefObject<HTMLDivElement> = React.createRef();
+  const aboutRef: React.RefObject<HTMLDivElement> = React.createRef();
+  const blogRef: React.RefObject<HTMLDivElement> = React.createRef();
+  const resumeRef: React.RefObject<HTMLDivElement> = React.createRef();
+  const contactRef: React.RefObject<HTMLDivElement> = React.createRef();
+
+  const refProps = [homeRef, aboutRef, blogRef, resumeRef, contactRef];
+
   return (
-    <Stack
-      verticalAlign="space-between"
-      horizontalAlign="center" 
-      styles={appStyles}>
-      <NavPane/>
-      <Header/>
-      <Home/>
-      <Footer/>
-    </Stack>
+    <div ref={homeRef}>
+      <Stack
+        verticalAlign="space-between"
+        horizontalAlign="center" 
+        styles={appStyles}>
+        <NavPane refProps={refProps}/>
+        <Header/>
+        <Home refProps={refProps}/>
+        <Footer/>
+      </Stack>
+    </div>
   )
 }
 

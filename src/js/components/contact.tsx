@@ -3,15 +3,21 @@ import { Stack, IStackStyles } from "@fluentui/react/lib/Stack";
 import { Text, ITextStyles } from "@fluentui/react/lib/Text";
 import { Depths } from '@uifabric/fluent-theme/lib/fluent/FluentDepths';
 
-export const Contact: React.FC = () => {
+export interface IContactProps {
+  contactRef: React.RefObject<HTMLDivElement>
+}
+
+export const Contact: React.FC<IContactProps> = (props) => {
   return (
-    <Stack styles={detailCardStyles} horizontalAlign="center" id="about">
-      <Text
-        variant="xxLarge" 
-        styles={headerStyle}>
-      {" Contact "}
-      </Text>
-    </Stack>
+    <div ref={props.contactRef}>
+      <Stack styles={detailCardStyles} horizontalAlign="center" id="contact">
+        <Text
+          variant="xxLarge" 
+          styles={headerStyle}>
+        {" Contact "}
+        </Text>
+      </Stack>
+    </div>
   )
 }
 

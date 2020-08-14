@@ -3,15 +3,21 @@ import { Stack, IStackStyles } from "@fluentui/react/lib/Stack";
 import { Text, ITextStyles } from "@fluentui/react/lib/Text";
 import { Depths } from '@uifabric/fluent-theme/lib/fluent/FluentDepths';
 
-export const Blog: React.FC = () => {
+export interface IBlogProps {
+  blogRef: React.RefObject<HTMLDivElement>
+}
+
+export const Blog: React.FC<IBlogProps> = (props) => {
   return (
-    <Stack styles={detailCardStyles} horizontalAlign="center" id="about">
-      <Text
-        variant="xxLarge" 
-        styles={headerStyle}>
-      {" Blog "}
-      </Text>
-    </Stack>
+    <div ref={props.blogRef}>
+      <Stack styles={detailCardStyles} horizontalAlign="center" id="blog">
+        <Text
+          variant="xxLarge" 
+          styles={headerStyle}>
+        {" Blog "}
+        </Text>
+      </Stack>
+    </div>
   )
 }
 
