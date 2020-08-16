@@ -41,13 +41,13 @@ export const NavPane: React.FC<INavPaneProps> = (props) => {
 
 const navHeaderStyle: Partial<IStackStyles> = {
   root: {
-    position: "sticky",
+    position: 'sticky',
     top: 0,
-    backgroundColor: "black",
+    backgroundColor: 'black',
     width: "100%",
     paddingLeft: 30,
     paddingRight: 30,
-    paddingBottom: 15,
+    paddingBottom: 20,
     paddingTop: 15
   }
 }
