@@ -11,7 +11,7 @@ export interface IHomeProps {
 
 export const Home: React.FC<IHomeProps> = (props) => {
   
-  const [homeRef, aboutRef, blogRef, resumeRef, contactRef] = props.refProps;  
+  const [aboutRef, blogRef, resumeRef, contactRef] = props.refProps;  
   return (
     <Stack horizontalAlign="space-between" styles={homeStyles} gap="2vw">
       <About aboutRef={aboutRef}/>
