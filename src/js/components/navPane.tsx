@@ -45,7 +45,8 @@ const navHeaderStyle: Partial<IStackStyles> = {
     paddingLeft: '2vw',
     paddingRight: '2vw',
     paddingBottom: '2vh',
-    paddingTop: '2vh'
+    paddingTop: '2vh',
+    overflowX: 'auto'
   }
 }
 
@@ -54,8 +55,7 @@ const buttonStyles: Partial<IButtonStyles> = {
     backgroundColor: 'black',
     color: 'white',
     border: 'none',
-    borderRight: '0.5vw',
-    fontSize: '20px ',
+    fontSize: '20px',
   }
 }
 
