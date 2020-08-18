@@ -12,12 +12,12 @@ const scrollToView = (ref: any) => { ref.current.scrollIntoView() };
 
 export const NavPane: React.FC<INavPaneProps> = (props) => {
 
-  const [aboutRef, blogRef, resumeRef, contactRef] = props.refProps;
+  const [aboutRef, resumeRef, contactRef, experienceRef] = props.refProps;
 
   const aboutScroll = () => { scrollToView(aboutRef); }
-  const blogScroll = () => { scrollToView(blogRef); }
   const resumeScroll = () => { scrollToView(resumeRef); }
   const contactScroll = () => { scrollToView(contactRef); }
+  const experienceScroll = () => { scrollToView(experienceRef); }
 
   return (
     <Stack horizontal horizontalAlign="space-between" styles={navHeaderStyle}>
@@ -26,9 +26,10 @@ export const NavPane: React.FC<INavPaneProps> = (props) => {
       </Link>
       <Stack horizontal gap="1vw">
         <DefaultButton onClick={aboutScroll} styles={buttonStyles}>About</DefaultButton>
-        <DefaultButton onClick={blogScroll} styles={buttonStyles}>Blog</DefaultButton>
-        <DefaultButton onClick={resumeScroll} styles={buttonStyles}>Resume</DefaultButton>
+        <DefaultButton onClick={experienceScroll} styles={buttonStyles}>Experience</DefaultButton>
+        <DefaultButton styles={buttonStyles} href="#/blog">Blog</DefaultButton>
         <DefaultButton onClick={contactScroll} styles={buttonStyles}>Contact</DefaultButton>
+        <DefaultButton onClick={resumeScroll} styles={buttonStyles}>Resume</DefaultButton>
       </Stack>
     </Stack>
   )
@@ -55,7 +56,6 @@ const buttonStyles: Partial<IButtonStyles> = {
     border: 'none',
     borderRight: '0.5vw',
     fontSize: '20px ',
-    width: '2vw',
   }
 }
 

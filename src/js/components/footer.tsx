@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
       verticalAlign="center"
       styles={footerStyle}>
       <Text variant="xLarge">
-        Built with <Icon iconName="HeartFill" className={iconClass} /> by @kshitij_07
+        Built with <Icon iconName="HeartFill" className={iconClass} /> by @07kshitij
       </Text>
       <ScrollToTop/>
     </Stack>

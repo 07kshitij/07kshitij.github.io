@@ -1,21 +1,28 @@
 import * as React from "react";
 import { Stack, IStackStyles } from "@fluentui/react/lib/Stack";
 import { About } from "./about";
-import { Blog } from "./blog";
 import { Contact } from "./contact";
 import { Resume } from "./resume";
+import { Experience } from "./experience";
 
 export interface IHomeProps {
   refProps: Array<React.RefObject<HTMLDivElement>>
 }
 
 export const Home: React.FC<IHomeProps> = (props) => {
+
+  React.useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'auto'
+    })
+  }, []);
   
-  const [aboutRef, blogRef, resumeRef, contactRef] = props.refProps;  
+  const [aboutRef, resumeRef, contactRef, experienceRef] = props.refProps;  
   return (
     <Stack horizontalAlign="space-between" styles={homeStyles} gap="2vw">
       <About aboutRef={aboutRef}/>
-      <Blog blogRef={blogRef}/>
+      <Experience experienceRef={experienceRef}/>
       <Contact contactRef={contactRef}/>
       <Resume resumeRef={resumeRef}/>
     </Stack>
