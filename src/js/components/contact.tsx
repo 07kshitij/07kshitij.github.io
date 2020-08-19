@@ -1,4 +1,4 @@
-import * as React from "react";
+  import * as React from "react";
 import { Stack, IStackStyles } from "@fluentui/react/lib/Stack";
 import { Text, ITextStyles } from "@fluentui/react/lib/Text";
 // @ts-ignore
@@ -13,7 +13,7 @@ export const Contact: React.FC<IContactProps> = (props) => {
     <div ref={props.contactRef}>
       <Stack styles={detailCardStyles} horizontalAlign="center" id="contact">
         <Text
-          variant="xxLarge"
+          variant="xxLargePlus"
           styles={headerStyle}>
           {"Contact"}
         </Text>

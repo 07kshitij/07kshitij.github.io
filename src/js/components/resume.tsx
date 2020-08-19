@@ -14,7 +14,7 @@ export const Resume: React.FC<IResumeProps> = (props) => {
       <Stack styles={detailCardStyles} horizontalAlign="center" id="resume" verticalAlign="center">
         <Link href="https://drive.google.com/file/d/1YVBS0hK9ZHZNAXIdeNFMPpAE0G8cFla9/view?usp=sharing">
           <Text
-            variant="xxLargePlus"
+            variant="xxLarge"
             styles={headerStyle}>
             {" Resume "}
           </Text>
@@ -34,7 +34,6 @@ const detailCardStyles: Partial<IStackStyles> = {
 
 const headerStyle: Partial<ITextStyles> = {
   root: {
-    padding: 20,
-    fontSize: "40px"
+    padding: 20
   }
 }
