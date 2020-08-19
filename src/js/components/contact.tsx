@@ -1,7 +1,8 @@
 import * as React from "react";
 import { Stack, IStackStyles } from "@fluentui/react/lib/Stack";
 import { Text, ITextStyles } from "@fluentui/react/lib/Text";
-import { Depths } from '@uifabric/fluent-theme/lib/fluent/FluentDepths';
+// @ts-ignore
+import { SocialIcon } from "react-social-icons";
 
 export interface IContactProps {
   contactRef: React.RefObject<HTMLDivElement>
@@ -12,10 +13,17 @@ export const Contact: React.FC<IContactProps> = (props) => {
     <div ref={props.contactRef}>
       <Stack styles={detailCardStyles} horizontalAlign="center" id="contact">
         <Text
-          variant="xxLarge" 
+          variant="xxLarge"
           styles={headerStyle}>
-        {" Contact "}
+          {"Contact"}
         </Text>
+        <Stack horizontal gap="1vw">
+          <SocialIcon url="https://github.com/07kshitij" />
+          <SocialIcon url="https://www.facebook.com/kshitij.1000000007" />
+          <SocialIcon url="https://medium.com/@kshitijagrawal2607" />
+          <SocialIcon url="mailto:kshitijagrawal2607@gmail.com" />
+          <SocialIcon url="https://www.linkedin.com/in/kshitij-agrawal-50712b16b/" />
+        </Stack>
       </Stack>
     </div>
   )
@@ -24,8 +32,7 @@ export const Contact: React.FC<IContactProps> = (props) => {
 const detailCardStyles: Partial<IStackStyles> = {
   root: {
     width: "100%",
-    height: "40vw",
-    boxShadow: Depths.depth16,
+    height: "15vh",
     backgroundColor: "white"
   }
 }

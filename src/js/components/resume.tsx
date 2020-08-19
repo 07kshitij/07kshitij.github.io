@@ -27,8 +27,7 @@ export const Resume: React.FC<IResumeProps> = (props) => {
 const detailCardStyles: Partial<IStackStyles> = {
   root: {
     width: "100%",
-    height: "15vw",
-    boxShadow: Depths.depth16,
+    height: "15vh",
     backgroundColor: "white"
   }
 }

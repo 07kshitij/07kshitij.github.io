@@ -24,9 +24,9 @@ export const About: React.FC<IAboutProps> = (props) => {
 const detailCardStyles: Partial<IStackStyles> = {
   root: {
     width: "100%",
-    height: "40vw",
+    height: "60vh",
     boxShadow: Depths.depth16,
-    backgroundColor: "white"
+    backgroundColor: "white",
   }
 }
 

@@ -20,6 +20,7 @@
     "css-loader": "^4.2.1",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
+    "react-social-icons": "^4.1.0",
     "style-loader": "^1.2.1",
     "typescript": "^3.9.7",
     "webpack": "^4.44.1",

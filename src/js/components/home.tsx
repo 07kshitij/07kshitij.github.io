@@ -20,7 +20,7 @@ export const Home: React.FC<IHomeProps> = (props) => {
   
   const [aboutRef, resumeRef, contactRef, experienceRef] = props.refProps;  
   return (
-    <Stack horizontalAlign="space-between" styles={homeStyles} gap="2vw">
+    <Stack horizontalAlign="space-between" styles={homeStyles} gap="0.5vw">
       <About aboutRef={aboutRef}/>
       <Experience experienceRef={experienceRef}/>
       <Contact contactRef={contactRef}/>
