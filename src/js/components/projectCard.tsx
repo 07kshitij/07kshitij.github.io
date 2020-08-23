@@ -8,11 +8,11 @@ import "../../css/styles.css";
 
 export const ProjectCard: React.FC = () => {
   return (
-    <Stack styles={skillCard}>
+    <Stack styles={projectCard} wrap>
       <div>
         <PrimaryButton text={"Projects"} styles={sectionTitleStyles} />
       </div>
-      <Stack gap="1vh" styles={{ root: { margin: '1vw', padding: '1vw' } }} wrap>
+      <Stack gap="1vh" styles={{ root: { margin: '1vw', paddingLeft: 10 } }} wrap>
         <Link styles={separatorStyles} href="https://github.com/07kshitij/07kshitij.github.io">
           <img src={"https://github.com/favicon.ico"} className="github-icon" /> {" "}
             07kshitij / 07kshitij.github.io
@@ -30,10 +30,12 @@ export const ProjectCard: React.FC = () => {
   )
 }
 
-const skillCard: Partial<IStackStyles> = {
+const projectCard: Partial<IStackStyles> = {
   root: {
     boxShadow: Depths.depth4,
     margin: 10,
+    paddingBottom: 10,
+    paddingRight: 10,
     maxWidth: '450px',
     width: '100%',
     backgroundColor: 'whitesmoke'  

@@ -8,18 +8,18 @@ import "../../css/styles.css";
 
 export const AcadsCard: React.FC = () => {
   return (
-    <Stack styles={skillCard}>
+    <Stack styles={acadCard} wrap>
       <div>
         <PrimaryButton text={"Academic Qualifications & Achievements"} styles={sectionTitleStyles} />
       </div>
       <Stack gap="1vh" styles={{ root: { margin: '1vw', padding: '1vw' } }} wrap>
-        <Text><b>Bachelors of Techonlogy (2017 - Present)</b></Text>
-        <Text styles={separatorStyles}>
+        <Text variant="mediumPlus"><b>Bachelors of Techonlogy (2017 - Present)</b></Text>
+        <Text styles={separatorStyles} variant="mediumPlus">
           Electronics {"&"} Electrical Communication Engineering <br />
           <Link href="https://en.wikipedia.org/wiki/Indian_Institute_of_Technology_Kharagpur">@IIT Kharagpur</Link>
         </Text>
-        <Text><b>ACM - ICPC Amritapuri Doublesite Regional Contest (2019)</b></Text>
-        <Text>
+        <Text variant="mediumPlus"><b>ACM - ICPC Amritapuri Doublesite Regional Contest (2019)</b></Text>
+        <Text variant="mediumPlus">
           <Link href="https://icpc.global/ICPCID/Q24S7K2P1JCJ">Honorable Mention</Link>
         </Text>
       </Stack>
@@ -27,7 +27,7 @@ export const AcadsCard: React.FC = () => {
   )
 }
 
-const skillCard: Partial<IStackStyles> = {
+const acadCard: Partial<IStackStyles> = {
   root: {
     boxShadow: Depths.depth4,
     margin: 10,
