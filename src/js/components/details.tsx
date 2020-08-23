@@ -12,19 +12,19 @@ export const DetailsCard: React.FC = () => {
         <PrimaryButton text={"About Me"} styles={sectionTitleStyles} />
       </div>
       <Stack styles={contentStyle} gap="1vh">
-        <Text variant="large">
+        <Text variant="large" styles={separatorStyles}>
           <b>$</b> Hi, I'm Kshitij, a Final year Undergraduate Student.
         </Text>
-        <Text variant="large">
+        <Text variant="large" styles={separatorStyles}>
           <b>$</b> I came across this wonderful concept of programming computers in my freshman year 
           and have been hanging around it for quite a while now.
         </Text>
-        <Text variant="large">
-          <b>$</b> My interests majorly include "Algorithmic Problem Solving", aka <b>Competitive 
-            Programming</b>, and I've participated in a lot of renowned Competitions 
+        <Text variant="large" styles={separatorStyles}>
+          <b>$</b> My favorite hobby is "Algorithmic Problem Solving", <i>aka</i> <b>Competitive 
+            Programming</b>, and I've participated in a lot of renowned competitions 
             notably <i> ACM - ICPC</i>, <i> Google KickSart </i> & <i> Facebook HackerCup </i> amongst the others.
         </Text>
-        <Text variant="large">
+        <Text variant="large" styles={separatorStyles}>
           <b>$</b> I'm currently learning Full Stack Web Development and also learning fundamentals of Computer Systems.
         </Text>
         <Text variant="large">
@@ -52,6 +52,14 @@ const sectionTitleStyles: Partial<IButtonStyles> = {
     fontSize: '16px'
   }
 }
+
+const separatorStyles: Partial<ITextStyles> = {
+  root: {
+    borderBottom: '1px solid #E1DFDD',
+    paddingBottom: '1vh'
+  }
+}
+
 
 const contentStyle: Partial<ITextStyles> = {
   root: {

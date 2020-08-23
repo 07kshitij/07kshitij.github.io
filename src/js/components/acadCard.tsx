@@ -13,7 +13,7 @@ export const AcadsCard: React.FC = () => {
         <PrimaryButton text={"Academic Qualifications & Achievements"} styles={sectionTitleStyles} />
       </div>
       <Stack gap="1vh" styles={{ root: { margin: '1vw', padding: '1vw' } }} wrap>
-        <Text variant="mediumPlus"><b>Bachelors of Techonlogy (2017 - Present)</b></Text>
+        <Text variant="mediumPlus"><b>Bachelors of Technology (2017 - Present)</b></Text>
         <Text styles={separatorStyles} variant="mediumPlus">
           Electronics {"&"} Electrical Communication Engineering <br />
           <Link href="https://en.wikipedia.org/wiki/Indian_Institute_of_Technology_Kharagpur">@IIT Kharagpur</Link>

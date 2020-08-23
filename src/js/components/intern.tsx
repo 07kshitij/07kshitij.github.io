@@ -14,7 +14,7 @@ export const InternCard: React.FC = () => {
       <Stack horizontalAlign="center" wrap>
         <img className="mslogo" src="../../../public/microsoft.png" alt="image" />
         <Text variant="xLargePlus" styles={titleStyle}>
-          Software Engineering Internship
+          Software Engineering Intern
         </Text>
         <Text variant="large" styles={titleStyle}>
           <b className="garageText">@Garage India</b>
