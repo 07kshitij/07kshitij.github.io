@@ -2,11 +2,14 @@ import * as React from "react";
 import { Text } from "@fluentui/react/lib/Text";
 import { Stack, IStackStyles } from "@fluentui/react/lib/Stack";
 import { Link, ILinkStyles } from "@fluentui/react/lib/Link";
-import { DefaultButton, IButtonStyles } from "@fluentui/react/lib/Button"
+import { DefaultButton, IButtonStyles, IconButton } from "@fluentui/react/lib/Button"
+import { IIconProps } from "@fluentui/react/lib/Icon";
 
 export interface INavPaneProps {
   refProps: Array<React.RefObject<unknown>>
 }
+
+const icons: IIconProps = {iconName: 'CollapseMenu'}
 
 const scrollToView = (ref: any) => { ref.current.scrollIntoView() };
 
@@ -20,10 +23,11 @@ export const NavPane: React.FC<INavPaneProps> = (props) => {
   const experienceScroll = () => { scrollToView(experienceRef); }
 
   return (
-    <Stack horizontal horizontalAlign="space-between" styles={navHeaderStyle}>
+    <Stack horizontal horizontalAlign="space-between" styles={navHeaderStyle} gap = "10vw">
       <Link styles={nameStyles} href="https://github.com/07kshitij/07kshitij.github.io">
         @07kshitij
       </Link>
+
       <Stack horizontal gap="1vw">
         <DefaultButton onClick={aboutScroll} styles={buttonStyles}>About</DefaultButton>
         <DefaultButton onClick={experienceScroll} styles={buttonStyles}>Experience</DefaultButton>

@@ -15,3 +15,24 @@ body, html {
 .scroll-to-top :hover {
     color: blue;
 }
+
+.mslogo {
+    width: 220px;
+}
+
+.garageText {
+    color: red;
+}
+
+.teamsText {
+    color: #6264A7;
+}
+
+.azureText {
+    color: #0078D4;
+}
+
+.github-icon {
+    width: 16px;
+    margin-right: 10px;
+}
