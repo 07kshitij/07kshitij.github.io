@@ -24,7 +24,7 @@ export const Blog: React.FC<IBlogProps> = (props) => {
       <Link styles={nameStyles} href="https://github.com/07kshitij/07kshitij.github.io">
         @07kshitij
       </Link>
-      <DefaultButton styles={buttonStyles} href="#/">Home</DefaultButton>
+      <DefaultButton styles={buttonStyles} href="/">Home</DefaultButton>
     </Stack>
 
         <Stack styles={detailCardStyles} horizontalAlign="center" id="blog">

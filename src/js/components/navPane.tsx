@@ -31,7 +31,7 @@ export const NavPane: React.FC<INavPaneProps> = (props) => {
       <Stack horizontal gap="1vw">
         <DefaultButton onClick={aboutScroll} styles={buttonStyles}>About</DefaultButton>
         <DefaultButton onClick={experienceScroll} styles={buttonStyles}>Experience</DefaultButton>
-        <DefaultButton styles={buttonStyles} href="#/blog">Blog</DefaultButton>
+        <DefaultButton styles={buttonStyles} href="/blog">Blog</DefaultButton>
         <DefaultButton onClick={contactScroll} styles={buttonStyles}>Contact</DefaultButton>
         <DefaultButton onClick={resumeScroll} styles={buttonStyles}>Resume</DefaultButton>
       </Stack>

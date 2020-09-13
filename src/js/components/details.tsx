@@ -41,7 +41,13 @@ const detailsCard: Partial<IStackStyles> = {
     margin: 10,
     maxWidth: '450px',
     width: '100%',
-    backgroundColor: 'whitesmoke'  
+    backgroundColor: 'white',
+    border: '1px solid rgba(10, 10, 10, 0.1)',
+    selectors: {
+      ':hover': {
+        backgroundColor: 'rgba(10, 10, 10, 0.05)'
+      }
+    }
   }
 }
 

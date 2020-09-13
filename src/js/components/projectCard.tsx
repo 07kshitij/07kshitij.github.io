@@ -13,16 +13,16 @@ export const ProjectCard: React.FC = () => {
         <PrimaryButton text={"Projects"} styles={sectionTitleStyles} />
       </div>
       <Stack gap="1vh" styles={{ root: { margin: '1vw', paddingLeft: 10 } }} wrap>
-        <Link styles={separatorStyles} href="https://github.com/07kshitij/07kshitij.github.io">
-          <img src={"https://github.com/favicon.ico"} className="github-icon" /> {" "}
+        <Link target="_blank" styles={separatorStyles} href="https://github.com/07kshitij/07kshitij.github.io">
+          <img src={"https://github.com/favicon.ico"} className="github-icon" alt="Github-Icon"/> {" "}
             07kshitij / 07kshitij.github.io
           </Link>
-        <Link styles={separatorStyles} href="https://github.com/07kshitij/Quarantine-Projects">
-          <img src={"https://github.com/favicon.ico"} className="github-icon" /> {" "}
+        <Link target="_blank" styles={separatorStyles} href="https://github.com/07kshitij/Quarantine-Projects">
+          <img src={"https://github.com/favicon.ico"} className="github-icon" alt="Github-Icon"/> {" "}
             07kshitij / Quarantine-Projects
           </Link>
-        <Link href="https://github.com/lbs-iitkgp/Opensoft-2019">
-          <img src={"https://github.com/favicon.ico"} className="github-icon" /> {" "}
+        <Link target="_blank" href="https://github.com/lbs-iitkgp/Opensoft-2019">
+          <img src={"https://github.com/favicon.ico"} className="github-icon" alt="Github-Icon"/> {" "}
             lbs-iitkgp / Opensoft-2019
           </Link>
       </Stack>
@@ -38,7 +38,13 @@ const projectCard: Partial<IStackStyles> = {
     paddingRight: 10,
     maxWidth: '450px',
     width: '100%',
-    backgroundColor: 'whitesmoke'  
+    backgroundColor: 'white',
+    border: '1px solid rgba(10, 10, 10, 0.1)',
+    selectors: {
+      ':hover': {
+        backgroundColor: 'rgba(10, 10, 10, 0.05)'
+      }
+    }
   }
 }
 

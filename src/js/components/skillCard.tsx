@@ -21,7 +21,6 @@ export const SkillCard: React.FC = () => {
         {/* <!--Frontend Technologies--> */}
         <PrimaryButton text={"JavaScript"} styles={skillListStyles} />
         <PrimaryButton text={"TypeScript"} styles={skillListStyles} />
-        <PrimaryButton text={"React"} styles={skillListStyles} />
         {/* <!--Backend Frameworks--> */}
         <PrimaryButton text={"Flask"} styles={skillListStyles} />
         <PrimaryButton text={"Node"} styles={skillListStyles} />
@@ -38,7 +37,13 @@ const skillCard: Partial<IStackStyles> = {
     margin: 10,
     maxWidth: '450px',
     width: '100%',
-    backgroundColor: 'whitesmoke'
+    backgroundColor: 'white',
+    border: '1px solid rgba(10, 10, 10, 0.1)',
+    selectors: {
+      ':hover': {
+        backgroundColor: 'rgba(10, 10, 10, 0.02)'
+      }
+    }
   }
 }
 

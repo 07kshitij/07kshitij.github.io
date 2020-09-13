@@ -16,11 +16,11 @@ export const AcadsCard: React.FC = () => {
         <Text variant="mediumPlus"><b>Bachelors of Technology (2017 - Present)</b></Text>
         <Text styles={separatorStyles} variant="mediumPlus">
           Electronics {"&"} Electrical Communication Engineering <br />
-          <Link href="https://en.wikipedia.org/wiki/Indian_Institute_of_Technology_Kharagpur">@IIT Kharagpur</Link>
+          <Link target="_blank" href="https://en.wikipedia.org/wiki/Indian_Institute_of_Technology_Kharagpur">IIT Kharagpur</Link>
         </Text>
         <Text variant="mediumPlus"><b>ACM - ICPC Amritapuri Doublesite Regional Contest (2019)</b></Text>
         <Text variant="mediumPlus">
-          <Link href="https://icpc.global/ICPCID/Q24S7K2P1JCJ">Honorable Mention</Link>
+          <Link target="_blank" href="https://icpc.global/ICPCID/Q24S7K2P1JCJ">Honorable Mention</Link>
         </Text>
       </Stack>
     </Stack>
@@ -33,7 +33,13 @@ const acadCard: Partial<IStackStyles> = {
     margin: 10,
     maxWidth: '450px',
     width: '100%',
-    backgroundColor: 'whitesmoke'
+    backgroundColor: 'white',
+    border: '1px solid rgba(10, 10, 10, 0.1)',
+    selectors: {
+      ':hover': {
+        backgroundColor: 'rgba(10, 10, 10, 0.05)'
+      }
+    }
   }
 }
 

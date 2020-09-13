@@ -17,7 +17,7 @@ export const InternCard: React.FC = () => {
           Software Engineering Intern
         </Text>
         <Text variant="large" styles={titleStyle}>
-          <b className="garageText">@Garage India</b>
+          <b className="garageText">Garage India</b>
           {" | "}
           <b className="teamsText">Microsoft Teams Mobile</b>
         </Text>
@@ -41,7 +41,13 @@ const internCard: Partial<IStackStyles> = {
     paddingRight: 10,
     maxWidth: '450px',
     width: '100%',
-    backgroundColor: 'whitesmoke'
+    backgroundColor: 'white',
+    border: '1px solid rgba(10, 10, 10, 0.1)',
+    selectors: {
+      ':hover': {
+        backgroundColor: 'rgba(10, 10, 10, 0.05)'
+      }
+    }
   }
 }
 

@@ -18,11 +18,11 @@ export const Contact: React.FC<IContactProps> = (props) => {
           {"Contact"}
         </Text>
         <Stack horizontal gap="1vw">
-          <SocialIcon url="https://github.com/07kshitij" />
-          <SocialIcon url="https://www.facebook.com/kshitij.1000000007" />
-          <SocialIcon url="https://medium.com/@kshitijagrawal2607" />
-          <SocialIcon url="mailto:kshitijagrawal2607@gmail.com" />
-          <SocialIcon url="https://www.linkedin.com/in/kshitij-agrawal-50712b16b/" />
+          <SocialIcon target="_blank" url="https://github.com/07kshitij" />
+          <SocialIcon target="_blank" url="https://www.facebook.com/kshitij.1000000007" />
+          <SocialIcon target="_blank" url="https://medium.com/@kshitijagrawal2607" />
+          <SocialIcon target="_blank" url="mailto:kshitijagrawal2607@gmail.com" />
+          <SocialIcon target="_blank" url="https://www.linkedin.com/in/kshitij-agrawal-50712b16b/" />
         </Stack>
       </Stack>
     </div>
