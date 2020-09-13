@@ -1,7 +1,14 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const path = require('path');
 
 module.exports = {
-  entry: "./src/index.tsx",
+  entry: {
+    main: "./src/index.tsx",
+    blog: "./src/blog.tsx"
+  },
+  output: {
+    filename: '[name].js',
+    path: path.resolve(__dirname, 'dist'),
+  },
   resolve: {
     // look for these file extensions
     extensions: [".ts", ".tsx", ".js"],
@@ -34,11 +41,5 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true, // Helpful to avoid 404s in development
-  },
-  plugins: [
-    new HtmlWebPackPlugin({
-      template: "./src/index.html",
-      filename: "./index.html"
-    })
-  ]
+  }
 };
