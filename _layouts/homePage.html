@@ -10,12 +10,21 @@
     <meta name="description" content="Home page of Kshitij Agrawal">
     {%- seo -%}
     <link rel="stylesheet" href="{{ "./assets/main.css" | relative_url }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     {%- feed_meta -%}
 </head>
 
-<body>
+<body class="blogPost">
     <div id="header">
         <script src="../dist/blog.js"></script>
+    </div>
+    <br/>
+    <div class="breadCrumbBar">
+        <div class="ui huge breadcrumb">
+            <a class="section" href="/">Home</a>
+            <div class="divider"> / </div>
+            <div class="active section">Blog</div>
+        </div>
     </div>
     <main class="page-content" aria-label="Content">
         <div class="wrapper">
@@ -23,8 +32,7 @@
                 <header class="post-header">
                     <h1 class="post-title">{{ page.title | escape }}</h1>
                 </header>
-
-                <div class="post-content">
+                <div class="ui segment">
                     {{ content }}
                 </div>
             </article>
