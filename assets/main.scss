@@ -1,3 +1,5 @@
+---
+---
 /** Reset some basic elements */
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
 
@@ -38,7 +40,7 @@ blockquote { color: #828282; border-left: 4px solid #e8e8e8; padding-left: 15px;
 blockquote > :last-child { margin-bottom: 0; }
 
 /** Code formatting */
-pre, code { font-size: 15px; border: 1px solid #e8e8e8; border-radius: 3px; background-color: #eef; }
+pre, code { font-size: 15px; border: 1px solid #e8e8e8; border-radius: 3px; background-color: #fff; }
 
 code { padding: 1px 5px; }
 
@@ -114,14 +116,14 @@ table td { border: 1px solid #e8e8e8; }
 .post-list { margin-left: 0; list-style: none; }
 .post-list > li { margin-bottom: 30px; }
 
-.post-meta { font-size: 14px; color: #828282; }
+.post-meta { font-size: 14px; color: #828282; text-align: center; }
 
 .post-link { display: block; font-size: 24px; }
 
 /** Posts */
 .post-header { margin-bottom: 30px; }
 
-.post-title { font-size: 42px; letter-spacing: -1px; line-height: 1; }
+.post-title { font-size: 42px; letter-spacing: -1px; line-height: 1; text-align: center; }
 @media screen and (max-width: 800px) { .post-title { font-size: 36px; } }
 
 .post-content { margin-bottom: 30px; }
@@ -134,7 +136,7 @@ table td { border: 1px solid #e8e8e8; }
 
 /** Syntax highlighting styles */
 .highlight { background: #fff; }
-.highlighter-rouge .highlight { background: #eef; }
+.highlighter-rouge .highlight { background: #fff; }
 .highlight .c { color: #998; font-style: italic; }
 .highlight .err { color: #a61717; background-color: #e3d2d2; }
 .highlight .k { font-weight: bold; }
