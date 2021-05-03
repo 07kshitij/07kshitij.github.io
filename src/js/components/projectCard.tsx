@@ -13,6 +13,10 @@ export const ProjectCard: React.FC = () => {
         <PrimaryButton text={"Projects"} styles={sectionTitleStyles} />
       </div>
       <Stack gap="1vh" styles={{ root: { margin: '1vw', paddingLeft: 10 } }} wrap>
+        <Link target="_blank" styles={separatorStyles} href="https://github.com/07kshitij/Multilingual_Lip_Reader">
+          <img src={"https://github.com/favicon.ico"} className="github-icon" alt="Github-Icon"/> {" "}
+           07kshitij / Multilingual_Lip_Reader
+          </Link>
         <Link target="_blank" styles={separatorStyles} href="https://github.com/07kshitij/07kshitij.github.io">
           <img src={"https://github.com/favicon.ico"} className="github-icon" alt="Github-Icon"/> {" "}
             07kshitij / 07kshitij.github.io

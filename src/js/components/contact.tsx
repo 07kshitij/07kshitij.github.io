@@ -1,4 +1,4 @@
-  import * as React from "react";
+import * as React from "react";
 import { Stack, IStackStyles } from "@fluentui/react/lib/Stack";
 import { Text, ITextStyles } from "@fluentui/react/lib/Text";
 // @ts-ignore
@@ -32,7 +32,7 @@ export const Contact: React.FC<IContactProps> = (props) => {
 const detailCardStyles: Partial<IStackStyles> = {
   root: {
     width: "100%",
-    height: "15vh",
+    height: "25vh",
     backgroundColor: "white"
   }
 }

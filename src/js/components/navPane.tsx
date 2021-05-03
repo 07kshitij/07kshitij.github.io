@@ -1,8 +1,7 @@
 import * as React from "react";
-import { Text } from "@fluentui/react/lib/Text";
 import { Stack, IStackStyles } from "@fluentui/react/lib/Stack";
 import { Link, ILinkStyles } from "@fluentui/react/lib/Link";
-import { DefaultButton, IButtonStyles, IconButton } from "@fluentui/react/lib/Button"
+import { DefaultButton, IButtonStyles } from "@fluentui/react/lib/Button"
 import { IIconProps } from "@fluentui/react/lib/Icon";
 
 export interface INavPaneProps {
@@ -15,10 +14,9 @@ const scrollToView = (ref: any) => { ref.current.scrollIntoView() };
 
 export const NavPane: React.FC<INavPaneProps> = (props) => {
 
-  const [aboutRef, resumeRef, contactRef, experienceRef] = props.refProps;
+  const [aboutRef, contactRef, experienceRef] = props.refProps;
 
   const aboutScroll = () => { scrollToView(aboutRef); }
-  const resumeScroll = () => { scrollToView(resumeRef); }
   const contactScroll = () => { scrollToView(contactRef); }
   const experienceScroll = () => { scrollToView(experienceRef); }
 
@@ -33,7 +31,7 @@ export const NavPane: React.FC<INavPaneProps> = (props) => {
         <DefaultButton onClick={experienceScroll} styles={buttonStyles}>Experience</DefaultButton>
         <DefaultButton styles={buttonStyles} href="/blog">Blog</DefaultButton>
         <DefaultButton onClick={contactScroll} styles={buttonStyles}>Contact</DefaultButton>
-        <DefaultButton onClick={resumeScroll} styles={buttonStyles}>Resume</DefaultButton>
+        <DefaultButton styles={buttonStyles} target="_blank" href="https://drive.google.com/file/d/1DBwrTPz5U76cAGIZBOX4eI4IE5V3uZJl/view?usp=sharing">Resume</DefaultButton>
       </Stack>
     </Stack>
   )

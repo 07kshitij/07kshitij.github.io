@@ -16,19 +16,12 @@ export const DetailsCard: React.FC = () => {
           <b>$</b> Hi, I'm Kshitij, a Final year Undergraduate Student.
         </Text>
         <Text variant="large" styles={separatorStyles}>
-          <b>$</b> I came across this wonderful concept of programming computers in my freshman year 
-          and have been hanging around it for quite a while now.
-        </Text>
-        <Text variant="large" styles={separatorStyles}>
           <b>$</b> My favorite hobby is "Algorithmic Problem Solving", <i>aka</i> <b>Competitive 
             Programming</b>, and I've participated in a lot of renowned competitions 
-            notably <i> ACM - ICPC</i>, <i> Google KickSart </i> & <i> Facebook HackerCup </i> amongst the others.
-        </Text>
-        <Text variant="large" styles={separatorStyles}>
-          <b>$</b> I'm currently learning Full Stack Web Development and also learning fundamentals of Computer Systems.
+            notably <i> ACM - ICPC</i>, <i> Google CodeJam </i> & <i> Facebook HackerCup </i> amongst the others.
         </Text>
         <Text variant="large">
-          <b>$</b> I'm a huge Cricket fan and follow matches of all the 3 formats regularly.
+          <b>$</b> I'm currently learning Full Stack Web Development and also learning fundamentals of Computer Systems.
         </Text>
       </Stack>        
     </Stack>

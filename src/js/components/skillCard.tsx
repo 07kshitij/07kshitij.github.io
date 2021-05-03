@@ -18,7 +18,7 @@ export const SkillCard: React.FC = () => {
         <PrimaryButton text={"C"} styles={skillListStyles} />
         <PrimaryButton text={"C++"} styles={skillListStyles} />
         <PrimaryButton text={"Python3"} styles={skillListStyles} />
-        {/* <!--Frontend Technologies--> */}
+        {/* <!--Frontend Languages--> */}
         <PrimaryButton text={"JavaScript"} styles={skillListStyles} />
         <PrimaryButton text={"TypeScript"} styles={skillListStyles} />
         {/* <!--Backend Frameworks--> */}

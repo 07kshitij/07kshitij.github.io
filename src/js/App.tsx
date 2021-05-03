@@ -10,11 +10,10 @@ import { Switch, Route } from "react-router-dom";
 export const App: React.FC = () => {
 
   const aboutRef: React.RefObject<HTMLDivElement> = React.createRef();
-  const resumeRef: React.RefObject<HTMLDivElement> = React.createRef();
   const contactRef: React.RefObject<HTMLDivElement> = React.createRef();
   const experienceRef: React.RefObject<HTMLDivElement> = React.createRef();
 
-  const refProps = [aboutRef, resumeRef, contactRef, experienceRef];
+  const refProps = [aboutRef, contactRef, experienceRef];
 
   return (
       <Stack

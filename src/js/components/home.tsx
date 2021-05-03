@@ -2,7 +2,6 @@ import * as React from "react";
 import { Stack, IStackStyles } from "@fluentui/react/lib/Stack";
 import { About } from "./about";
 import { Contact } from "./contact";
-import { Resume } from "./resume";
 import { Experience } from "./experience";
 
 export interface IHomeProps {
@@ -18,13 +17,12 @@ export const Home: React.FC<IHomeProps> = (props) => {
     })
   }, []);
   
-  const [aboutRef, resumeRef, contactRef, experienceRef] = props.refProps;  
+  const [aboutRef, contactRef, experienceRef] = props.refProps;  
   return (
     <Stack horizontalAlign="space-between" styles={homeStyles} gap="0.5vw">
       <About aboutRef={aboutRef}/>
       <Experience experienceRef={experienceRef}/>
       <Contact contactRef={contactRef}/>
-      <Resume resumeRef={resumeRef}/>
     </Stack>
   )
 }

@@ -30,10 +30,9 @@ export const Experience: React.FC<IExperienceProps> = (props) => {
 const detailCardStyles: Partial<IStackStyles> = {
   root: {
     width: "100%",
-    minHeight: "50vh",
     borderBottom: '2px solid #E1DFDD',
     backgroundColor: "white",
-    paddingTop: 40
+    padding: 20
   }
 }
 
