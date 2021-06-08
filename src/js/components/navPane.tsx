@@ -31,7 +31,7 @@ export const NavPane: React.FC<INavPaneProps> = (props) => {
         <DefaultButton onClick={experienceScroll} styles={buttonStyles}>Experience</DefaultButton>
         <DefaultButton styles={buttonStyles} href="/blog">Blog</DefaultButton>
         <DefaultButton onClick={contactScroll} styles={buttonStyles}>Contact</DefaultButton>
-        <DefaultButton styles={buttonStyles} target="_blank" href="https://drive.google.com/file/d/1DBwrTPz5U76cAGIZBOX4eI4IE5V3uZJl/view?usp=sharing">Resume</DefaultButton>
+        <DefaultButton styles={buttonStyles} target="_blank" href="https://drive.google.com/file/d/1RL6-qTxNXJYvgBFHcEZPf3xgd9_IPzSt/view?usp=sharing">Resume</DefaultButton>
       </Stack>
     </Stack>
   )
