@@ -12,7 +12,7 @@ export const Resume: React.FC<IResumeProps> = (props) => {
   return (
     <div ref={props.resumeRef}>
       <Stack styles={detailCardStyles} horizontalAlign="center" id="resume" verticalAlign="center">
-        <Link target="_blank" href="https://drive.google.com/file/d/1uKyweZsY_IpElae5dhc9rLxY7w8R-ynP/view?usp=sharing">
+        <Link target="_blank" href="https://drive.google.com/file/d/1RL6-qTxNXJYvgBFHcEZPf3xgd9_IPzSt/view?usp=sharing">
           <Text
             variant="xxLarge"
             styles={headerStyle}>
