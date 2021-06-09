@@ -10,13 +10,6 @@ export interface IBlogProps {
 
 export const Blog: React.FC<IBlogProps> = (props) => {
 
-  React.useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    })
-  }, []);
-
   return (
     <Stack styles={blogStyles}>
       <Stack horizontal horizontalAlign="space-between" styles={navHeaderStyle}>
