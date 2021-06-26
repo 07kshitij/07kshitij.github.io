@@ -3,7 +3,7 @@ import { IconButton } from "@fluentui/react/lib/Button";
 import { IIconProps } from "@fluentui/react/lib/Icon";
 import "../../css/styles.css";
 
-const upButton: IIconProps = { iconName: 'DoubleChevronUp' };
+const upButton: IIconProps = { iconName: "DoubleChevronUp" };
 
 export const ScrollToTop: React.FC = () => {
   const [isVisible, toggleVisibility] = React.useState(false);
@@ -14,14 +14,14 @@ export const ScrollToTop: React.FC = () => {
     } else if (isVisible && window.pageYOffset < 200) {
       toggleVisibility(false);
     }
-  }
+  };
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
-  }
+  };
 
   window.addEventListener("scroll", checkScroll);
 
@@ -32,7 +32,7 @@ export const ScrollToTop: React.FC = () => {
       title="Scroll to Top"
       ariaLabel="scrollToTop"
       onClick={scrollToTop}
-      style={{display: isVisible ? 'flex' : 'none' }}
+      style={{ display: isVisible ? "flex" : "none" }}
     />
-  )
-}
+  );
+};

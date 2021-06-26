@@ -7,7 +7,7 @@ import { AcadsCard } from "./acadCard";
 import "../../css/styles.css";
 
 export interface IAboutProps {
-  aboutRef: React.RefObject<HTMLDivElement>
+  aboutRef: React.RefObject<HTMLDivElement>;
 }
 
 export const About: React.FC<IAboutProps> = (props) => {
@@ -17,29 +17,33 @@ export const About: React.FC<IAboutProps> = (props) => {
         <Text variant="xxLargePlus" styles={headerStyle}>
           About Me
         </Text>
-        <Stack horizontal wrap horizontalAlign="center">
-          <AcadsCard/>
-          <DetailsCard/>
-          <SkillCard/>
+        <Stack>
+          <Stack wrap horizontalAlign="center">
+            <DetailsCard />
+          </Stack>
+          <Stack horizontal horizontalAlign="space-evenly" wrap>
+            <AcadsCard />
+            <SkillCard />
+          </Stack>
         </Stack>
       </Stack>
     </div>
-  )
-}
+  );
+};
 
 const detailCardStyles: Partial<IStackStyles> = {
   root: {
     width: "100%",
     minHeight: "60vh",
-    borderBottom: '2px solid #E1DFDD',
+    borderBottom: "2px solid #E1DFDD",
     backgroundColor: "white",
-    paddingTop: 40
-  }
-}
+    paddingTop: 40,
+  },
+};
 
 const headerStyle: Partial<ITextStyles> = {
   root: {
     padding: 20,
-    textAlign: 'center'
-  }
-}
+    textAlign: "center",
+  },
+};
