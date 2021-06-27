@@ -14,11 +14,11 @@ export const Experience: React.FC<IExperienceProps> = (props) => {
 
   return (
     <div ref={props.experienceRef}>
-      <Stack styles={detailCardStyles} id="experience" horizontalAlign="center">
+      <Stack styles={detailCardStyles} id="experience">
         <Text variant="xxLargePlus" styles={headerStyle}>
           Experience
         </Text>
-        <Stack horizontalAlign="center">
+        <Stack horizontal horizontalAlign="space-around" wrap>
           <InternCard/>
           <ProjectCard/>
         </Stack>  

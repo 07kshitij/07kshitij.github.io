@@ -13,15 +13,18 @@ export const DetailsCard: React.FC = () => {
       </div>
       <Stack styles={contentStyle} tokens={{ childrenGap: "1vh" }}>
         <Text variant="large" styles={separatorStyles}>
-          <b>$</b> Hi, I'm Kshitij Agrawal, a recent graduate from IIT Kharagpur.
+          <b>$</b> Hi, I'm <b>Kshitij Agrawal</b>, a batch of 2017 - 21 graduate from IIT Kharagpur, and an aspiring
+          Software Engineer
         </Text>
         <Text variant="large" styles={separatorStyles}>
-          <b>$</b> My favorite hobby is <b>Competitive Programming</b>, and I've participated in a lot of renowned
-          competitions notably <i> ACM - ICPC</i>, <i> Google CodeJam </i> & <i> Facebook HackerCup </i> amongst the
-          others.
+          <b>$</b> I enjoy solving <b>Algorithmic problems</b>, and have participated in a lot of renowned
+          competitions including the <b><i>ACM - ICPC</i></b>.
+        </Text>
+        <Text variant="large" styles={separatorStyles}>
+          <b>$</b> I aspire to work on complex problems involving scale and learning more about Distributed Systems.
         </Text>
         <Text variant="large">
-          <b>$</b> I'm currently learning Full Stack Web Development and also learning fundamentals of Computer Systems.
+          <b>$</b> Besides coding, I follow <i>Cricket</i> a lot and currently fascinated by the science behind <i>Formula - 1</i>.
         </Text>
       </Stack>
     </Stack>
@@ -33,11 +36,12 @@ const detailsCard: Partial<IStackStyles> = {
     boxShadow: Depths.depth4,
     margin: 10,
     width: "80%",
-    backgroundImage: "linear-gradient(0deg, rgba(8, 8, 200, 0.1), rgba(8, 8, 200, 0.3))",
+    minWidth: "300px",
+    backgroundColor: "rgba(62, 64, 167, 0.2)",
     border: "1px solid rgba(10, 10, 10, 0.1)",
     selectors: {
       ":hover": {
-        backgroundImage: "linear-gradient(0deg, rgba(8, 8, 200, 0.1), rgba(8, 8, 200, 0.4))",
+        backgroundImage: "linear-gradient(0deg, rgba(62, 64, 167, 0.1), rgba(62, 64, 167, 0.4))",
       },
     },
   },

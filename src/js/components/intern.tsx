@@ -41,11 +41,11 @@ const internCard: Partial<IStackStyles> = {
     paddingRight: 10,
     maxWidth: "450px",
     width: "100%",
-    backgroundImage: "linear-gradient(0deg, rgba(8, 8, 200, 0.1), rgba(8, 8, 200, 0.3))",
+    backgroundColor: "rgba(62, 64, 167, 0.2)",
     border: "1px solid rgba(10, 10, 10, 0.1)",
     selectors: {
       ":hover": {
-        backgroundImage: "linear-gradient(0deg, rgba(8, 8, 200, 0.2), rgba(8, 8, 200, 0.4))",
+        backgroundImage: "linear-gradient(0deg, rgba(62, 64, 167, 0.1), rgba(62, 64, 167, 0.4))",
       },
     },
   },
